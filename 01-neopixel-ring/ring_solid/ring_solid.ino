@@ -1,3 +1,7 @@
+// NeoPixel ring solid color
+// Board: ESP32-S3 | Ring: WS2812 x8
+// DIN -> GPIO5 (330R), power: external 5V, common GND
+
 #include <Adafruit_NeoPixel.h> //ok
 
 #define PIN 5
