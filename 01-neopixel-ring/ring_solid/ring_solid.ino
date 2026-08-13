@@ -11,10 +11,13 @@ Adafruit_NeoPixel ring(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
 void setup() {
   ring.begin();
-  ring.setBrightness(50);
+  ring.setBrightness(255);
 
   for (int j = 0; j < NUMPIXELS; j++) {
-  ring.setPixelColor(j, 250, 183, 47);
+  ring.clear();
+  ring.setPixelColor(j, 127, 0, 255);
+  ring.show();
+  delay(200);
   }
 
   ring.show();
